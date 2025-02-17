@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .nav-links li a:hover {
+            color: #ddd;
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 ;">
+            <div class="logo">
+                <img src="https://marketplace.canva.com/EAGQ1aYlOWs/1/0/1200w/canva-blue-colorful-illustrative-e-commerce-online-shop-logo-MVS0cTX-ZHc.png" alt="Company Logo" style="height: 80px;width: 90px;">
+            </div>
+            <ul class="nav-links" style="margin: 0;">
+                <li><a href="#home" style="margin: 0 1rem">Home</a></li>
+                <li><a href="about.html" style="margin: 0 1rem">About</a></li>
+                <li><a href="services.html" style="margin: 0 1rem">Services</a></li>
+                <li><a href="contact.html" style="margin: 0 1rem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1 style="animation: colorChange 3s infinite;">
+            <marquee>Welcome to Rana Ecommerce Shopping.</marquee>
+        </h1>
+      
+        
+
+        <div class="products-section">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://img.freepik.com/premium-photo/photo-online-fashion-shopping-with-laptop_575980-20483.jpg?ga=GA1.1.1732958443.1733563558&semt=ais_hybrid" alt="Product">
+                    <h3>Product Name</h3>
+                    <p>$99.99</p>
+                    <button class="shop-now-btn">Shop Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://img.freepik.com/premium-photo/red-jacket-is-red-box-with-red-jacket-it_999671-42756.jpg?ga=GA1.1.1732958443.1733563558&semt=ais_hybrid" alt="Product">
+                    <h3>Product Name</h3>
+                    <p>$99.99</p>
+                    <button class="shop-now-btn">Shop Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://img.freepik.com/premium-photo/woman-sending-parcel-using-her-laptop-working-from-home_451635-459.jpg?ga=GA1.1.1732958443.1733563558&semt=ais_hybrid" alt="Product">
+                    <h3>Product Name</h3>
+                    <p>$99.99</p>
+                    <button class="shop-now-btn">Shop Now</button>
+                    </div>
+                    <div class="product-card">
+                    <img src="https://img.freepik.com/premium-photo/smartphone-shopping-cart-online-shopping-concept_38716-138.jpg" alt="Product">
+                    <h3>Smartphone</h3>
+                    <p>$599.99</p>
+                    <button class="shop-now-btn">Shop Now</button>
+                    </div>
+                    <div class="product-card">
+                    <img src="https://img.freepik.com/premium-photo/wireless-headphones-floating-pink-background-minimal-creative-music-concept_408798-4640.jpg" alt="Product">
+                    <h3>Wireless Headphones</h3>
+                    <p>$149.99</p>
+                    <button class="shop-now-btn">Shop Now</button>
+                    </div>
+                    <div class="product-card"> 
+                    <img src="https://img.freepik.com/premium-photo/smartwatch-with-health-tracking-apps-display_670147-11864.jpg" alt="Product">
+                    <h3>Smart Watch</h3>
+                    <p>$299.99</p>
+                    <button class="shop-now-btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="features-section">
+            <div class="feature-card">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>Fast Delivery</h3>
+                <p>Free shipping on orders over $50</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-lock"></i>
+                <h3>Secure Payment</h3>
+                <p>100% secure payment processing</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Dedicated support team</p>
+            </div>
+        </div>
+        <style>
+            body {
+                background-color: #f0f2f5;
+                min-height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
+
+            .content {
+                background-color: white;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 2rem;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+                border-radius: 10px;
+            }
+        </style>
+
+        <style>
+            .features-section {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin: 2rem 0;
+                padding: 2rem;
+                background: #f8f9fa;
+            }
+
+            .feature-card {
+                text-align: center;
+                padding: 1.5rem;
+                margin: 1rem;
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex: 1;
+                min-width: 250px;
+                transition: transform 0.3s ease;
+            }
+
+            .feature-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .feature-card i {
+                font-size: 2.5rem;
+                color: #007bff;
+                margin-bottom: 1rem;
+            }
+
+            .products-section {
+                padding: 2rem;
+                margin: 2rem 0;
+            }
+
+            .products-section h2 {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .product-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+                padding: 1rem;
+            }
+
+            .product-card {
+                background: white;
+                border-radius: 10px;
+                padding: 1rem;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .product-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .product-card img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+                margin-bottom: 1rem;
+            }
+
+            .shop-now-btn {
+                background: #007bff;
+                color: white;
+                border: none;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+            }
+
+            .shop-now-btn:hover {
+                background: #0056b3;
+            }
+
+            @media (max-width: 768px) {
+                .features-section {
+                    flex-direction: column;
+                }
+
+                .feature-card {
+                    margin: 1rem 0;
+                }
+
+                .product-grid {
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                }
+            }
+
+            @media (max-width: 480px) {
+                .content {
+                    padding: 1rem;
+                }
+
+                .product-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+        <style>
+            @keyframes colorChange {
+                0% { color: red; }
+                25% { color: blue; }
+                50% { color: green; }
+                75% { color: purple; }
+                100% { color: red; }
+            }
+        </style>
+    </div>
+</body>
+</html>

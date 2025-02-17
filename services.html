@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Rana Ecommerce</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .nav-links li a:hover {
+            color: #ddd;
+        }
+
+        .content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services-section {
+            background-color: #f8f9fa;
+            padding: 3rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0;">
+            <div class="logo">
+                <img src="https://marketplace.canva.com/EAGQ1aYlOWs/1/0/1200w/canva-blue-colorful-illustrative-e-commerce-online-shop-logo-MVS0cTX-ZHc.png" alt="Company Logo" style="height: 80px;width: 90px;">
+            </div>
+            <ul class="nav-links" style="margin: 0;">
+                <li><a href="index3.html" style="margin: 0 1rem">Home</a></li>
+                <li><a href="about.html" style="margin: 0 1rem">About</a></li>
+                <li><a href="services.html" style="margin: 0 1rem">Services</a></li>
+                <li><a href="contact.html" style="margin: 0 1rem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="services-section">
+            <h1 style="text-align: center; margin-bottom: 2rem;">Our Services</h1>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://img.freepik.com/free-vector/delivery-service-illustrated_23-2148505081.jpg" alt="Fast Shipping">
+                    <h3>Fast Shipping</h3>
+                    <p>Get your orders delivered quickly and securely with our express shipping service. Free shipping on orders over $50!</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://img.freepik.com/free-vector/customer-support-illustration_23-2148887720.jpg" alt="24/7 Support">
+                    <h3>24/7 Customer Support</h3>
+                    <p>Our dedicated support team is available round the clock to assist you with any queries or concerns.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://img.freepik.com/free-vector/secure-payment-concept-illustration_114360-5256.jpg" alt="Secure Payment">
+                    <h3>Secure Payment</h3>
+                    <p>Shop with confidence using our secure payment gateway with multiple payment options available.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://img.freepik.com/free-vector/easy-returns-concept-illustration_114360-7620.jpg" alt="Easy Returns">
+                    <h3>Easy Returns</h3>
+                    <p>Hassle-free return policy with 30-day money-back guarantee on all products.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
